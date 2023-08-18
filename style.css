@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    background-color: #333;
+}
+
+.img-container {
+    background-color: rgb(211, 211, 99);
+    height: 40vh;
+    width: 20rem;
+    border-radius: 5000px;
+    position: relative;
+    top: 3rem;
+}
+
+.main-row {
+    height: 120vh;
+}
+
+.buttons-shop {
+    margin-left: 5rem;
+    margin-top: 3rem
+}
+
+.btn {
+    width: 10rem;
+    margin-top: .5rem;
+}
+
+.item-title {
+    position: relative;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    top: .5rem;
+}
