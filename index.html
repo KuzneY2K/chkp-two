@@ -20,8 +20,8 @@
         <!-- MAIN ROW -->
         <section class="row container-fluid p-0 m-0 main-row">
             <!-- MOON -->
-            <div class="col-12 d-flex justify-content-center p-0">
-                <div class="img-container shadow m-0 moon" onclick="mine()">.</div>
+            <div class="col-12 d-flex justify-content-center p-0 bg-img-container">
+                <div class="img-container mt-5 moon" onclick="mine()">.</div>
             </div>
             <!-- PER CLICK/INT -->
             <div class="col-4 m-0 p-0 cheese-per-click text-center fs-2 text-white">Cheese P/Click: <span
@@ -30,7 +30,7 @@
             <div class="col-4 m-0 p-0 cheese-per-interval text-center fs-2 text-white">Cheese P/Sec: <span
                     class="cheese-ps"></span></div>
             <!-- BUTTONS -->
-            <div class="col-6 bg-secondary p-0 m-0 container-fluid">
+            <div class="col-6 bg-secondary p-0 m-0 container-fluid bg-warning-subtle">
                 <div class="buttons-shop container-fluid">
                     <p class="upgrade-shop-title fs-2">
                         Expedition Upgrades
@@ -68,7 +68,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 bg-secondary p-0 m-0 container-fluid">
+            <!-- STATS -->
+            <div class="col-6 bg-secondary p-0 m-0 container-fluid bg-warning-subtle">
                 <div class="mouse-stats container-fluid">
                     <div class="buttons-shop container-fluid">
                         <p class="upgrade-shop-title fs-2">
@@ -76,36 +77,39 @@
                         </p>
                         <div class="stat-container d-flex flex-row justify-content-start p-0 m-0 mt-1">
                             <p class="fs-4"><span
-                                    class="border border-2 border-dark rounded px-5 py-2 qty-box qty-knives-out">QTY</span>
+                                    class="border border-2 border-dark rounded px-5 py-1 qty-box qty-knives-out">QTY</span>
                                 <i class="mdi mdi-knife"></i>
                                 Knives
-                                <i class="mdi mdi-arrow-right-bold"></i> <span
-                                    class="border border-2 border-dark rounded px-5 py-2 qty-box qty-knives-out-2">QTY</span>
+                                <i class="mdi mdi-arrow-right-bold"></i><i class="mdi mdi-close-thick"></i> <span
+                                    class="border border-2 border-dark rounded px-5 py-1 qty-box qty-knives-out-2">QTY</span>
                             </p>
                         </div>
                         <div class="stat-container d-flex flex-row justify-content-start p-0 m-0 mt-1">
                             <p class="fs-4"><span
-                                    class="border border-2 border-dark rounded qty-box px-5 py-2 qty-friends-out">QTY</span>
+                                    class="border border-2 border-dark rounded qty-box px-5 py-1 qty-friends-out">QTY</span>
                                 <i class="mdi mdi-rodent"></i>
-                                Friends <i class="mdi mdi-arrow-right-bold"></i> <span
-                                    class="border border-2 border-dark rounded px-5 py-2 qty-box qty-friends-out-2">QTY</span>
+                                Friends <i class="mdi mdi-arrow-right-bold"></i><i class="mdi mdi-close-thick"></i>
+                                <span
+                                    class="border border-2 border-dark rounded px-5 py-1 qty-box qty-friends-out-2">QTY</span>
                             </p>
                         </div>
                         <div class="stat-container d-flex flex-row justify-content-start p-0 m-0 mt-1">
                             <p class="fs-4"><span
-                                    class="border border-2 border-dark rounded px-5 py-2 qty-box qty-bigknives-out">QTY</span>
+                                    class="border border-2 border-dark rounded px-5 py-1 qty-box qty-bigknives-out">QTY</span>
                                 <i class="mdi mdi-knife"></i>
                                 Big Knives
-                                <i class="mdi mdi-arrow-right-bold"></i> <span
-                                    class="border border-2 border-dark rounded px-5 py-2 qty-box qty-bigknives-out-2">QTY</span>
+                                <i class="mdi mdi-arrow-right-bold"></i><i class="mdi mdi-close-thick"></i> <span
+                                    class="border border-2 border-dark rounded px-5 py-1 qty-box qty-bigknives-out-2">QTY</span>
                             </p>
                         </div>
                         <div class="stat-container d-flex flex-row justify-content-start p-0 m-0 mt-1">
                             <p class="fs-4"><span
-                                    class="border border-2 border-dark rounded qty-box px-5 py-2 qty-hungryfriends-out">QTY</span>
+                                    class="border border-2 border-dark rounded qty-box px-5 py-1 qty-hungryfriends-out">QTY</span>
                                 <i class="mdi mdi-rodent"></i>
-                                Hungry Friends <i class="mdi mdi-arrow-right-bold"></i> <span
-                                    class="border border-2 border-dark rounded px-5 py-2 qty-box qty-hungryfriends-out-2">QTY</span>
+                                Hungry Friends <i class="mdi mdi-arrow-right-bold"></i><i
+                                    class="mdi mdi-close-thick"></i>
+                                <span
+                                    class="border border-2 border-dark rounded px-5 py-1 qty-box qty-hungryfriends-out-2">QTY</span>
                             </p>
                         </div>
                     </div>
