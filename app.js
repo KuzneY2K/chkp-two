@@ -16,12 +16,17 @@ let buyKnifeButton2 = document.querySelector('.buy-knife-btn-2')
 let buyFriendsButton = document.querySelector('.buy-friend-btn')
 let buyFriendsButton2 = document.querySelector('.buy-friend-btn-2')
 
+let qtyBigKnivesOut = document.querySelector('.qty-bigknives-out')
+let qtyBigKnivesPC = document.querySelector('.qty-bigknives-out-2')
+let qtyHungryFriendsOut = document.querySelector('.qty-hungryfriends-out')
+let qtyHungryFriendsPS = document.querySelector('.qty-hungryfriends-out-2')
+
 // Arrays
 let clickUpgrades = [{
     name: 'Cheese Knife',
     price: 50,
     quantity: 1,
-    multiplier: 0,
+    multiplier: 1,
 }, {
     name: 'Big Cheese Knife',
     price: 200,
@@ -33,7 +38,7 @@ let autoUpgrades = [{
     name: 'Friend',
     price: 200,
     quantity: 1,
-    multiplier: 0,
+    multiplier: 1,
 }, {
     name: 'Hungry Friends',
     price: 800,
@@ -120,10 +125,14 @@ setInterval(function () {
 }, 100)
 
 setInterval(function () {
-    qtyKnivesOut.innerHTML = clickUpgrades[0].quantity + clickUpgrades[1].quantity
-    qtyFriendsOut.innerHTML = autoUpgrades[0].quantity + autoUpgrades[1].quantity
-    qtyKnivesPC.innerHTML = clickUpgrades[0].quantity + clickUpgrades[1].quantity * clickUpgrades[0].multiplier + clickUpgrades[0].multiplier
-    qtyFriendsPS.innerHTML = autoUpgrades[0].quantity + autoUpgrades[1].quantity * autoUpgrades[0].multiplier + autoUpgrades[1].multiplier
+    qtyKnivesOut.innerHTML = clickUpgrades[0].quantity
+    qtyFriendsOut.innerHTML = autoUpgrades[0].quantity
+    qtyKnivesPC.innerHTML = clickUpgrades[0].quantity * clickUpgrades[0].multiplier
+    qtyFriendsPS.innerHTML = autoUpgrades[0].quantity * autoUpgrades[0].multiplier
+    qtyBigKnivesOut.innerHTML = clickUpgrades[1].quantity
+    qtyBigKnivesPC.innerHTML = clickUpgrades[1].quantity * clickUpgrades[1].multiplier
+    qtyHungryFriendsOut.innerHTML = autoUpgrades[1].quantity
+    qtyHungryFriendsPS.innerHTML = autoUpgrades[1].quantity * autoUpgrades[1].multiplier
 }, 100)
 
 setInterval(function () {
